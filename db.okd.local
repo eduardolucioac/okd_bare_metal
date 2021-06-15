@@ -1,5 +1,5 @@
 $TTL    604800
-@   IN  SOA okd_services.okd.local. admin.okd.local. (
+@   IN  SOA okd-services.okd.local. admin.okd.local. (
         1       ; Serial
         604800  ; Refresh
         86400   ; Retry
@@ -8,30 +8,30 @@ $TTL    604800
 )
 
 ; Name servers - "NS" records.
-    IN  NS  okd_services
+    IN  NS  okd-services
 
 ; Name servers - "A" records.
-okd_services.okd.local. IN A <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
+okd-services.okd.local. IN A <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
 
 ; OpenShift container platform cluster - "A" records.
-okd_boostrap.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_BOOSTRAP_LST_OCT>
-okd_master_1.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_MASTER_1_LST_OCT>
-okd_master_2.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_MASTER_2_LST_OCT>
-okd_master_3.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_MASTER_3_LST_OCT>
-okd_worker_1.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_WORKER_1_LST_OCT>
-okd_worker_2.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_WORKER_2_LST_OCT>
+okd-boostrap.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_BOOSTRAP_LST_OCT>
+okd-master-1.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_MASTER_1_LST_OCT>
+okd-master-2.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_MASTER_2_LST_OCT>
+okd-master-3.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_MASTER_3_LST_OCT>
+okd-worker-1.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_WORKER_1_LST_OCT>
+okd-worker-2.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_WORKER_2_LST_OCT>
 
 ; Openshift internal cluster IPs - "A" records.
 api.mbr.okd.local.              IN  A   <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
-api_int.mbr.okd.local.          IN  A   <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
+api-int.mbr.okd.local.          IN  A   <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
 *.apps.mbr.okd.local.           IN  A   <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
-etcd_0.mbr.okd.local.           IN  A   <OKD_LAN_24>.<OKD_MASTER_1_LST_OCT>
-etcd_1.mbr.okd.local.           IN  A   <OKD_LAN_24>.<OKD_MASTER_2_LST_OCT>
-etcd_2.mbr.okd.local.           IN  A   <OKD_LAN_24>.<OKD_MASTER_3_LST_OCT>
-cons_okd.apps.mbr.okd.local.    IN  A   <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
-oauth_okd.apps.mbr.okd.local.   IN  A   <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
+etcd-0.mbr.okd.local.           IN  A   <OKD_LAN_24>.<OKD_MASTER_1_LST_OCT>
+etcd-1.mbr.okd.local.           IN  A   <OKD_LAN_24>.<OKD_MASTER_2_LST_OCT>
+etcd-2.mbr.okd.local.           IN  A   <OKD_LAN_24>.<OKD_MASTER_3_LST_OCT>
+cons-okd.apps.mbr.okd.local.    IN  A   <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
+oauth-okd.apps.mbr.okd.local.   IN  A   <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
 
 ; OpenShift internal cluster IPs - "SRV" records.
-_etcd_server_ssl._tcp.mbr.okd.local.    86400   IN  SRV 0   10  2380    etcd_0.mbr
-_etcd_server_ssl._tcp.mbr.okd.local.    86400   IN  SRV 0   10  2380    etcd_1.mbr
-_etcd_server_ssl._tcp.mbr.okd.local.    86400   IN  SRV 0   10  2380    etcd_2.mbr
+_etcd-server-ssl._tcp.mbr.okd.local.    86400   IN  SRV 0   10  2380    etcd-0.mbr
+_etcd-server-ssl._tcp.mbr.okd.local.    86400   IN  SRV 0   10  2380    etcd-1.mbr
+_etcd-server-ssl._tcp.mbr.okd.local.    86400   IN  SRV 0   10  2380    etcd-2.mbr
