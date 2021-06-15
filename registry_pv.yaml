@@ -4,7 +4,7 @@ metadata:
   name: registry-pv
 spec:
   capacity:
-    storage: 45Gi
+    storage: <OKD_SERVICES_STRG_SZ>Gi
   accessModes:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
