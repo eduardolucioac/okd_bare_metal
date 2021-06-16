@@ -27,4 +27,4 @@ platform:
 fips: false
 
 pullSecret: '{"auths":{"fake":{"auth": "bar"}}}'
-sshKey: 'ssh-ed25519 AAAA...'
+sshKey: '<SSH_PUB_KEY>'
