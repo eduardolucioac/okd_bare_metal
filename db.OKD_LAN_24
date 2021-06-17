@@ -14,7 +14,7 @@ $TTL    604800
 <OKD_SERVICES_LST_OCT> IN  PTR okd-services.okd.local.
 
 ; OpenShift container platform cluster - "PTR" records.
-<OKD_BOOSTRAP_LST_OCT> IN  PTR okd-boostrap.mbr.okd.local.
+<OKD_BOOTSTRAP_LST_OCT> IN  PTR okd-bootstrap.mbr.okd.local.
 <OKD_MASTER_1_LST_OCT> IN  PTR okd-master-1.mbr.okd.local.
 <OKD_MASTER_2_LST_OCT> IN  PTR okd-master-2.mbr.okd.local.
 <OKD_MASTER_3_LST_OCT> IN  PTR okd-master-3.mbr.okd.local.

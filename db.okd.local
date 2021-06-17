@@ -14,7 +14,7 @@ $TTL    604800
 okd-services.okd.local. IN A <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
 
 ; OpenShift container platform cluster - "A" records.
-okd-boostrap.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_BOOSTRAP_LST_OCT>
+okd-bootstrap.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_BOOTSTRAP_LST_OCT>
 okd-master-1.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_MASTER_1_LST_OCT>
 okd-master-2.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_MASTER_2_LST_OCT>
 okd-master-3.mbr.okd.local. IN  A   <OKD_LAN_24>.<OKD_MASTER_3_LST_OCT>
