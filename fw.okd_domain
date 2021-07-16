@@ -1,0 +1,37 @@
+$TTL 604800
+@ IN SOA okd-services.<OKD_DOMAIN>. admin.<OKD_DOMAIN>. (
+    1       ; Serial
+    604800  ; Refresh
+    86400   ; Retry
+    2419200 ; Expire
+    604800  ; Negative Cache TTL
+)
+
+; Name servers - "NS" records.
+ IN NS okd-services
+
+; Name servers - "A" records.
+okd-services.<OKD_DOMAIN>. IN A <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
+
+; OpenShift container platform cluster - "A" records.
+okd-bootstrap.mbr.<OKD_DOMAIN>. IN A <OKD_LAN_24>.<OKD_BOOTSTRAP_LST_OCT>
+okd-master-1.mbr.<OKD_DOMAIN>. IN A <OKD_LAN_24>.<OKD_MASTER_1_LST_OCT>
+okd-master-2.mbr.<OKD_DOMAIN>. IN A <OKD_LAN_24>.<OKD_MASTER_2_LST_OCT>
+okd-master-3.mbr.<OKD_DOMAIN>. IN A <OKD_LAN_24>.<OKD_MASTER_3_LST_OCT>
+okd-worker-1.mbr.<OKD_DOMAIN>. IN A <OKD_LAN_24>.<OKD_WORKER_1_LST_OCT>
+okd-worker-2.mbr.<OKD_DOMAIN>. IN A <OKD_LAN_24>.<OKD_WORKER_2_LST_OCT>
+
+; Openshift internal cluster IPs - "A" records.
+api.mbr.<OKD_DOMAIN>. IN A <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
+api-int.mbr.<OKD_DOMAIN>. IN A <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
+*.apps.mbr.<OKD_DOMAIN>. IN A <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
+etcd-0.mbr.<OKD_DOMAIN>. IN A <OKD_LAN_24>.<OKD_MASTER_1_LST_OCT>
+etcd-1.mbr.<OKD_DOMAIN>. IN A <OKD_LAN_24>.<OKD_MASTER_2_LST_OCT>
+etcd-2.mbr.<OKD_DOMAIN>. IN A <OKD_LAN_24>.<OKD_MASTER_3_LST_OCT>
+console-openshift-console.apps.mbr.<OKD_DOMAIN>. IN A <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
+oauth-openshift.apps.mbr.<OKD_DOMAIN>. IN A <OKD_LAN_24>.<OKD_SERVICES_LST_OCT>
+
+; OpenShift internal cluster IPs - "SRV" records.
+_etcd-server-ssl._tcp.mbr.<OKD_DOMAIN>. 86400 IN SRV 0 10 2380 etcd-0.mbr
+_etcd-server-ssl._tcp.mbr.<OKD_DOMAIN>. 86400 IN SRV 0 10 2380 etcd-1.mbr
+_etcd-server-ssl._tcp.mbr.<OKD_DOMAIN>. 86400 IN SRV 0 10 2380 etcd-2.mbr
