@@ -73,18 +73,14 @@ f_power_sed_ecp() {
     # NOTE: For the TARGET value. By Questor
 
         F_EZ_SED_ECP_R=$(echo "x${F_VAL_TO_ECP}x" | sed 's/[]\/$*.^|[]/\\&/g' | sed 's/\t/\\t/g' | sed "s/'/\\\x27/g")
-        # F_EZ_SED_ECP_R=$(echo "'${F_VAL_TO_ECP}'" | sed 's/[]\/$*.^|[]/\\&/g' | sed 's/\t/\\t/g')
     else
     # NOTE: For the REPLACE value. By Questor
 
         F_EZ_SED_ECP_R=$(echo "x${F_VAL_TO_ECP}x" | sed 's/[]\/$*.^|[]/\\&/g' | sed 's/\t/\\t/g' | sed "s/'/\\\x27/g" | sed ':a;N;$!ba;s/\n/\\n/g')
-        # F_EZ_SED_ECP_R=$(echo "'${F_VAL_TO_ECP}'" | sed 's/[]\/$*.^|[]/\\&/g' | sed 's/\t/\\t/g' | sed ':a;N;$!ba;s/\n/\\n/g')
     fi
 
     F_EZ_SED_ECP_R=${F_EZ_SED_ECP_R%?}
     F_EZ_SED_ECP_R=${F_EZ_SED_ECP_R#?}
-
-    echo "$F_ECP_TYPE - $F_EZ_SED_ECP_R"
 
 }
 
@@ -103,10 +99,6 @@ f_ez_sed() {
     F_TARGET=$1
     F_REPLACE=$2
     F_FILE=$3
-
-    echo " > ------------------------------"
-    echo "$F_FILE"
-
     F_ALL_OCCUR=$4
     if [ -z "$F_ALL_OCCUR" ] ; then
         F_ALL_OCCUR=0
@@ -123,9 +115,6 @@ f_ez_sed() {
 
     eval "sed -i $SED_RPL $F_FILE"
 
-    echo "$SED_RPL"
-    echo " < ------------------------------"
-
 }
 
 # NOTE: Get the folder path from "setup.bash" file and change the working directory
@@ -140,18 +129,14 @@ cd "$SCRIPTDIR_V"
 
 # File ./install-config.yaml
 f_ez_sed "<OKD_DOMAIN>" "$OKD_DOMAIN" "$SCRIPTDIR_V/install-config.yaml" 1
-echo "CUH 0"
+
 # File ./registry_pv.yaml
 f_ez_sed "<OKD_LAN_24>" "$OKD_LAN_24" "$SCRIPTDIR_V/registry_pv.yaml" 1
-echo "CUH 1"
 f_ez_sed "<OKD_SERVICES_LST_OCT>" "$OKD_SERVICES_LST_OCT" "$SCRIPTDIR_V/registry_pv.yaml" 1
-echo "CUH 2"
 f_ez_sed "<OKD_SERVICES_STRG_SZ>" "$OKD_SERVICES_STRG_SZ" "$SCRIPTDIR_V/registry_pv.yaml" 1
-echo "CUH 3"
 
 # File ./registry_pvc.yaml
 f_ez_sed "<OKD_SERVICES_STRG_SZ>" "$OKD_SERVICES_STRG_SZ" "$SCRIPTDIR_V/registry_pvc.yaml" 1
-echo "CUH 4"
 
 # < -------------------
 
@@ -160,35 +145,20 @@ echo "CUH 4"
 
 # File ./dhcpd.conf
 f_ez_sed "<OKD_BOOTSTRAP_LST_OCT>" "$OKD_BOOTSTRAP_LST_OCT" "$SCRIPTDIR_V/dhcpd.conf" 1
-echo "CUH 5"
 f_ez_sed "<OKD_BOOTSTRAP_MAC>" "$OKD_BOOTSTRAP_MAC" "$SCRIPTDIR_V/dhcpd.conf" 1
-echo "CUH 6"
 f_ez_sed "<OKD_DOMAIN>" "$OKD_DOMAIN" "$SCRIPTDIR_V/dhcpd.conf" 1
-echo "CUH 7"
 f_ez_sed "<OKD_LAN_24>" "$OKD_LAN_24" "$SCRIPTDIR_V/dhcpd.conf" 1
-echo "CUH 8"
 f_ez_sed "<OKD_MASTER_1_LST_OCT>" "$OKD_MASTER_1_LST_OCT" "$SCRIPTDIR_V/dhcpd.conf" 1
-echo "CUH 9"
 f_ez_sed "<OKD_MASTER_1_MAC>" "$OKD_MASTER_1_MAC" "$SCRIPTDIR_V/dhcpd.conf" 1
-echo "CUH 10"
 f_ez_sed "<OKD_MASTER_2_LST_OCT>" "$OKD_MASTER_2_LST_OCT" "$SCRIPTDIR_V/dhcpd.conf" 1
-echo "CUH 11"
 f_ez_sed "<OKD_MASTER_2_MAC>" "$OKD_MASTER_2_MAC" "$SCRIPTDIR_V/dhcpd.conf" 1
-echo "CUH 12"
 f_ez_sed "<OKD_MASTER_3_LST_OCT>" "$OKD_MASTER_3_LST_OCT" "$SCRIPTDIR_V/dhcpd.conf" 1
-echo "CUH 13"
 f_ez_sed "<OKD_MASTER_3_MAC>" "$OKD_MASTER_3_MAC" "$SCRIPTDIR_V/dhcpd.conf" 1
-echo "CUH 14"
 f_ez_sed "<OKD_SERVICES_LST_OCT>" "$OKD_SERVICES_LST_OCT" "$SCRIPTDIR_V/dhcpd.conf" 1
-echo "CUH 15"
 f_ez_sed "<OKD_WORKER_1_LST_OCT>" "$OKD_WORKER_1_LST_OCT" "$SCRIPTDIR_V/dhcpd.conf" 1
-echo "CUH 16"
 f_ez_sed "<OKD_WORKER_1_MAC>" "$OKD_WORKER_1_MAC" "$SCRIPTDIR_V/dhcpd.conf" 1
-echo "CUH 17"
 f_ez_sed "<OKD_WORKER_2_LST_OCT>" "$OKD_WORKER_2_LST_OCT" "$SCRIPTDIR_V/dhcpd.conf" 1
-echo "CUH 18"
 f_ez_sed "<OKD_WORKER_2_MAC>" "$OKD_WORKER_2_MAC" "$SCRIPTDIR_V/dhcpd.conf" 1
-echo "CUH 19"
 
 # < -------------------
 
@@ -197,53 +167,32 @@ echo "CUH 19"
 
 # File ./named.conf
 f_ez_sed "<OKD_LAN_24>" "$OKD_LAN_24" "$SCRIPTDIR_V/named.conf" 1
-echo "CUH 20"
 f_ez_sed "<OKD_SERVICES_LST_OCT>" "$OKD_SERVICES_LST_OCT" "$SCRIPTDIR_V/named.conf" 1
-echo "CUH 21"
 
 # File ./named.conf.local
 f_ez_sed "<OKD_DOMAIN>" "$OKD_DOMAIN" "$SCRIPTDIR_V/named.conf.local" 1
-echo "CUH 22"
 f_ez_sed "<OKD_LAN_24_REVERSE>" "$OKD_LAN_24_REVERSE" "$SCRIPTDIR_V/named.conf.local" 1
-echo "CUH 23"
 
 # File ./fw.okd_domain
 f_ez_sed "<OKD_BOOTSTRAP_LST_OCT>" "$OKD_BOOTSTRAP_LST_OCT" "$SCRIPTDIR_V/fw.okd_domain" 1
-echo "CUH 24"
 f_ez_sed "<OKD_DOMAIN>" "$OKD_DOMAIN" "$SCRIPTDIR_V/fw.okd_domain" 1
-echo "CUH 25"
 f_ez_sed "<OKD_LAN_24>" "$OKD_LAN_24" "$SCRIPTDIR_V/fw.okd_domain" 1
-echo "CUH 26"
 f_ez_sed "<OKD_MASTER_1_LST_OCT>" "$OKD_MASTER_1_LST_OCT" "$SCRIPTDIR_V/fw.okd_domain" 1
-echo "CUH 27"
 f_ez_sed "<OKD_MASTER_2_LST_OCT>" "$OKD_MASTER_2_LST_OCT" "$SCRIPTDIR_V/fw.okd_domain" 1
-echo "CUH 28"
 f_ez_sed "<OKD_MASTER_3_LST_OCT>" "$OKD_MASTER_3_LST_OCT" "$SCRIPTDIR_V/fw.okd_domain" 1
-echo "CUH 29"
 f_ez_sed "<OKD_SERVICES_LST_OCT>" "$OKD_SERVICES_LST_OCT" "$SCRIPTDIR_V/fw.okd_domain" 1
-echo "CUH 30"
 f_ez_sed "<OKD_WORKER_1_LST_OCT>" "$OKD_WORKER_1_LST_OCT" "$SCRIPTDIR_V/fw.okd_domain" 1
-echo "CUH 31"
 f_ez_sed "<OKD_WORKER_2_LST_OCT>" "$OKD_WORKER_2_LST_OCT" "$SCRIPTDIR_V/fw.okd_domain" 1
-echo "CUH 32"
 
 # File ./rv.okd_domain
 f_ez_sed "<OKD_BOOTSTRAP_LST_OCT>" "$OKD_BOOTSTRAP_LST_OCT" "$SCRIPTDIR_V/rv.okd_domain" 1
-echo "CUH 33"
 f_ez_sed "<OKD_DOMAIN>" "$OKD_DOMAIN" "$SCRIPTDIR_V/rv.okd_domain" 1
-echo "CUH 34"
 f_ez_sed "<OKD_MASTER_1_LST_OCT>" "$OKD_MASTER_1_LST_OCT" "$SCRIPTDIR_V/rv.okd_domain" 1
-echo "CUH 35"
 f_ez_sed "<OKD_MASTER_2_LST_OCT>" "$OKD_MASTER_2_LST_OCT" "$SCRIPTDIR_V/rv.okd_domain" 1
-echo "CUH 36"
 f_ez_sed "<OKD_MASTER_3_LST_OCT>" "$OKD_MASTER_3_LST_OCT" "$SCRIPTDIR_V/rv.okd_domain" 1
-echo "CUH 37"
 f_ez_sed "<OKD_SERVICES_LST_OCT>" "$OKD_SERVICES_LST_OCT" "$SCRIPTDIR_V/rv.okd_domain" 1
-echo "CUH 38"
 f_ez_sed "<OKD_WORKER_1_LST_OCT>" "$OKD_WORKER_1_LST_OCT" "$SCRIPTDIR_V/rv.okd_domain" 1
-echo "CUH 39"
 f_ez_sed "<OKD_WORKER_2_LST_OCT>" "$OKD_WORKER_2_LST_OCT" "$SCRIPTDIR_V/rv.okd_domain" 1
-echo "CUH 40"
 
 # < -------------------
 
@@ -252,19 +201,12 @@ echo "CUH 40"
 
 # File ./haproxy.cfg
 f_ez_sed "<OKD_BOOTSTRAP_LST_OCT>" "$OKD_BOOTSTRAP_LST_OCT" "$SCRIPTDIR_V/haproxy.cfg" 1
-echo "CUH 41"
 f_ez_sed "<OKD_LAN_24>" "$OKD_LAN_24" "$SCRIPTDIR_V/haproxy.cfg" 1
-echo "CUH 42"
 f_ez_sed "<OKD_MASTER_1_LST_OCT>" "$OKD_MASTER_1_LST_OCT" "$SCRIPTDIR_V/haproxy.cfg" 1
-echo "CUH 43"
 f_ez_sed "<OKD_MASTER_2_LST_OCT>" "$OKD_MASTER_2_LST_OCT" "$SCRIPTDIR_V/haproxy.cfg" 1
-echo "CUH 44"
 f_ez_sed "<OKD_MASTER_3_LST_OCT>" "$OKD_MASTER_3_LST_OCT" "$SCRIPTDIR_V/haproxy.cfg" 1
-echo "CUH 45"
 f_ez_sed "<OKD_WORKER_1_LST_OCT>" "$OKD_WORKER_1_LST_OCT" "$SCRIPTDIR_V/haproxy.cfg" 1
-echo "CUH 50"
 f_ez_sed "<OKD_WORKER_2_LST_OCT>" "$OKD_WORKER_2_LST_OCT" "$SCRIPTDIR_V/haproxy.cfg" 1
-echo "CUH 51"
 
 # < -------------------
 
