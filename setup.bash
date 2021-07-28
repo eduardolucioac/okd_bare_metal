@@ -40,7 +40,7 @@ OKD_WORKER_2_LST_OCT="13"
 OKD_WORKER_2_MAC="52:54:00:20:ec:4f"
 
 # NOTES:
-# I - In case you want to add new master or worker nodes, in the examples above I
+# I - In case you want to add new master or worker nodes, in the examples above we
 # left a gap for 5 sequential IPs for new master nodes (last octets 7, 8, 9, 10 and
 # 11) and a gap for 5 sequential IPs for new worker nodes (last octets 14, 15, 16,
 # 17 and 18);
