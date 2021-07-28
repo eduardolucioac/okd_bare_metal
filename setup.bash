@@ -6,7 +6,7 @@
 # The domain for the OpenShift (OKD) cluster.
 # IMPORTANT: The domain used to install the cluster CANNOT BE CHANGED! See documentation!
 # By Questor
-OKD_DOMAIN="okd.local"
+OKD_DOMAIN="domain.abc"
 
 # First 3 octets of OpenShift (OKD) cluster network (forward and reverse).
 OKD_LAN_24="10.3.0"
