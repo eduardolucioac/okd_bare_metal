@@ -2573,7 +2573,7 @@ This solution implies losing resources linked to the deleted user. Then assess w
 
 # About
 
-Private_Tux 🄯 BSD-3-Clause  
+okd_bare_metal 🄯 BSD-3-Clause  
 Eduardo Lúcio Amorim Costa  
 Brazil-DF
 
