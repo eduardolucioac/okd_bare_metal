@@ -26,7 +26,7 @@ We need to make it clear that our intention is not to disqualify the OpenShift p
 
 Install OpenShift (OKD) on an UPI is a long process with a lot of pitfalls and details. You need, also, some knowledge regarding network infrastructure among other things (DNS, DHCP, load balancing, etc...). Also note that hostnames and domains (DNS, basically) are critical for the functioning of the cluster and if there are any error in these configurations the cluster will not even install.
 
-Unfortunately, there is no easy way to deploy this thing and sometimes this process - without the correct information and without help from the community - is hard as hell... I made this guide because I found several difficulty points in installing OpenShift (OKD) and the guides I found on the internet are complex and omit important and crucial information about this process.
+Unfortunately, there is no easy way to deploy this thing and sometimes this process - without the correct information and without help from the community - is hard as hell... We made this guide because we found several difficulty points in installing OpenShift (OKD) and the guides we found on the internet are complex and omit important and crucial information about this process.
 
 **So, stay on that track and don't look back! Let's work!**
 
@@ -1190,7 +1190,7 @@ Jul 18 23:59:07 okd-bootstrap bootkube.sh[17729]:         Pod Status:openshift-k
 --------
 
 **TIPS:**
- 1. If your bootstrap process is failing repeatedly, you may need to increase the nodes' RAM beyond the minimum requirements - at the moment I don't recommend do it. However, keep in mind that if the process repeatedly fails effectively something bad is happening even to the consumed remote resources. We've had cases where the bootstrap process repeatedly failed with a certain configuration and two days later it worked perfectly with it. If these remote resources are in trouble, your cluster is at risk of being compromised forever;
+ 1. If your bootstrap process is failing repeatedly, you may need to increase the nodes' RAM beyond the minimum requirements - at the moment we don't recommend do it. However, keep in mind that if the process repeatedly fails effectively something bad is happening even to the consumed remote resources. We've had cases where the bootstrap process repeatedly failed with a certain configuration and two days later it worked perfectly with it. If these remote resources are in trouble, your cluster is at risk of being compromised forever;
  2. You can wait for the bootstrap process to be completed with only the master nodes as only they are needed for it and then add the worker nodes. Although it is not mandatory to wait for the bootstrap process to occur only with the master nodes running. As a matter of practicality it is better to do the process this way since for the bootstrap process to occur only they are needed;
  3. If a new attempt is needed (bootstrap the cluster again) remove the folders `rm -rf /usr/local/okd/` and `rm -rf /var/www/html/okd` in the OKD_SERVICES server, recreate all nodes - clean/recreate its hard disks - and restart the process from the subsection "Setup the cluster's install directory" of the section "Setup the OpenShift (OKD) (installer and client) (OKD_SERVICES)".
 
