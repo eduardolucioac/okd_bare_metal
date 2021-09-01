@@ -76,6 +76,7 @@ Hardware requirements and other information...
  * V - Nested Virtualization required.
 
 **NOTE:** The bootstrap node (OKD_BOOTSTRAP) is only used during the OKD installation and will be destroyed at the end of the installation.
+
 [Ref(s).: https://docs.openshift.com/container-platform/4.2/architecture/architecture-installation.html ]
 
 **Some acronyms...**
