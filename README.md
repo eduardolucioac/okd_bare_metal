@@ -2570,3 +2570,11 @@ This solution implies losing resources linked to the deleted user. Then assess w
 --------
 
 ---------------------------------------------------------------------
+
+# About
+
+Private_Tux 🄯 BSD-3-Clause  
+Eduardo Lúcio Amorim Costa  
+Brazil-DF
+
+<img border="0" alt="Brazil-DF" src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Map_of_Brazil_with_flag.svg/180px-Map_of_Brazil_with_flag.svg.png" height="15%" width="15%"/>
