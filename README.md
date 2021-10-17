@@ -4,7 +4,7 @@ The OKD is a distribution of Kubernetes optimized for continuous application dev
 
 [Ref(s).: https://www.okd.io/#v4 ]
 
-## IMPORTANT things to know before getting started and some facts about OpenShift (OKD)
+## IMPORTANT things to know before getting started and some facts about OpenShift (OKD) 4.X
 
 This guide is directed to a User-Provisioned Infrastructure (UPI) built on top of KVM, but about KVM we will only cover the most crucial points or those that generate more doubts in the process. However, with some adaptations we can use this guide with any hypervisor or even physical machines (real "bare-metal"). While we can't talk about "bare-metal" for a UPI built on a hypervisor, we'll agree to use this terminology just for the sake of convenience.
 
