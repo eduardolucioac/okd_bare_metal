@@ -26,7 +26,7 @@ We need to make it clear that our intention is not to disqualify the OpenShift (
 
 Install OpenShift (OKD) on an UPI is a long process with a lot of pitfalls and details. You need, also, some knowledge regarding network infrastructure among other things (DNS, DHCP, load balancing, etc...). Also note that hostnames and domains (DNS, basically) are critical for the functioning of the cluster and if there are any error in these configurations the cluster will not even install.
 
-Unfortunately, there is no easy way to deploy this thing and sometimes this process - without the correct information and without help from the community - is hard as hell... We made this guide because we found several difficulty points in installing OpenShift (OKD) and the guides we found on the internet are complex and omit important and crucial information about this process.
+**Unfortunately, there is no easy way to deploy this thing and sometimes this process - without the correct information and without help from the community - is hard as hell...** We made this guide because we found several difficulty points in installing OpenShift (OKD) and the guides we found on the internet are complex and omit important and crucial information about this process.
 
 **So, stay on that track and don't look back! Let's work!**
 
