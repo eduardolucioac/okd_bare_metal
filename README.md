@@ -106,10 +106,11 @@ Hardware requirements and other information...
 | 10.3.0.13 - 52:54:00:20:ec:4f  X  <OKD_LAN_24>.<OKD_WORKER_2_LST_OCT> ---- <OKD_WORKER_2_MAC>    |
 | 10.3.0.19 - 52:54:00:07:80:62  X  <OKD_LAN_24>.<OKD_BOOTSTRAP_LST_OCT> --- <OKD_BOOTSTRAP_MAC>   |
 '--------------------------------------------------------------------------------------------------'
- . "_LST_OCT" - Last Octet;
- . "_MAC" - MAC address;
- . "_IL" - Internet with Lan.
 ```
+
+ * "_LST_OCT" - Last Octet;
+ * "_MAC" - MAC address;
+ * "_IL" - Internet with Lan.
 
 **Network layout...**
 
