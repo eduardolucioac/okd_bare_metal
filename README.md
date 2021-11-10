@@ -110,7 +110,7 @@ Hardware requirements and other information...
 
  * "_LST_OCT" - Last Octet;
  * "_MAC" - MAC address;
- * "_IL" - Internet with Lan.
+ * "_IL" - Internet Lan.
 
 **Network layout...**
 
