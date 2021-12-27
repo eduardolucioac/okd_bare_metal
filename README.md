@@ -1,6 +1,6 @@
 # Install the OpenShift (OKD) 4.X cluster (UPI/"bare-metal")
 
-<img src="openshift-okd.png" height="800">
+<img src="openshift-okd.png" height="350">
 
 The OKD is a distribution of Kubernetes optimized for continuous application development and multi-tenant deployment. It adds developer and operations-centric tools on top of Kubernetes to enable rapid application development, easy deployment and scaling, and long-term lifecycle maintenance for small and large teams. It incorporates and extends Kubernetes with security and other integrated concepts. The OKD is a sibling Kubernetes distribution to Red Hat OpenShift. 
 
