@@ -1,9 +1,14 @@
-# Table of Contents - Install the OpenShift (OKD) 4.X cluster (UPI/"bare-metal")
+# Install the OpenShift (OKD) 4.X cluster (UPI/"bare-metal")
 
 <img src="openshift-okd.png" height="350">
 
-- [Install the OpenShift (OKD) 4.X cluster (UPI/"bare-metal")](#install-the-openshift--okd--4x-cluster--upi--bare-metal--)
-  * [IMPORTANT things to know before getting started and some facts about OpenShift (OKD) 4.X](#important-things-to-know-before-getting-started-and-some-facts-about-openshift--okd--4x)
+The OKD is a distribution of Kubernetes optimized for continuous application development and multi-tenant deployment. It adds developer and operations-centric tools on top of Kubernetes to enable rapid application development, easy deployment and scaling, and long-term lifecycle maintenance for small and large teams. It incorporates and extends Kubernetes with security and other integrated concepts. The OKD is a sibling Kubernetes distribution to Red Hat OpenShift. 
+
+[Ref(s).: https://www.okd.io/#v4 ]
+
+# Table of Contents
+
+- [IMPORTANT things to know before getting started and some facts about OpenShift (OKD) 4.X](#important-things-to-know-before-getting-started-and-some-facts-about-openshift--okd--4x)
 - [Cluster overview](#cluster-overview)
 - [Create a "very private"/"very isolated" network on KVM (N_OKD_LAN) (HYPERVISOR)](#create-a--very-private---very-isolated--network-on-kvm--n-okd-lan---hypervisor-)
 - [Create the OKD_SERVICES server](#create-the-okd-services-server)
@@ -92,13 +97,7 @@
   * [Test access to the Web Console](#test-access-to-the-web-console)
 - [About](#about)
 
-# Install the OpenShift (OKD) 4.X cluster (UPI/"bare-metal")
-
-The OKD is a distribution of Kubernetes optimized for continuous application development and multi-tenant deployment. It adds developer and operations-centric tools on top of Kubernetes to enable rapid application development, easy deployment and scaling, and long-term lifecycle maintenance for small and large teams. It incorporates and extends Kubernetes with security and other integrated concepts. The OKD is a sibling Kubernetes distribution to Red Hat OpenShift. 
-
-[Ref(s).: https://www.okd.io/#v4 ]
-
-## IMPORTANT things to know before getting started and some facts about OpenShift (OKD) 4.X
+# IMPORTANT things to know before getting started and some facts about OpenShift (OKD) 4.X
 
 This guide is directed to a User-Provisioned Infrastructure (UPI) built on top of KVM, but about KVM we will only cover the most crucial points or those that generate more doubts in the process. However, with some adaptations we can use this guide with any hypervisor or even physical machines (real "bare-metal"). While we can't talk about "bare-metal" for a UPI built on a hypervisor, we'll agree to use this terminology just for the sake of convenience.
 
