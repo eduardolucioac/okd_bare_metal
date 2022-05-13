@@ -88,7 +88,7 @@ The OKD is a distribution of Kubernetes optimized for continuous application dev
   * [Add a job (crontab) to renew the certificate (NGINX_REVERSE_PROXY)](#add-a-job--crontab--to-renew-the-certificate--nginx-reverse-proxy-)
   * [Create configuration to Nginx reverse proxy OpenShift (OKD) (NGINX_REVERSE_PROXY)](#create-configuration-to-nginx-reverse-proxy-openshift--okd---nginx-reverse-proxy-)
     + [Create a configuration file for Nginx reverse proxy](#create-a-configuration-file-for-nginx-reverse-proxy)
-- [OpenLDAP (LDAP) e OpenShift (OKD) - Configuring OpenLDAP (LDAP) as identity provider for OpenShift (OKD)](#openldap--ldap--e-openshift--okd----configuring-openldap--ldap--as-identity-provider-for-openshift--okd-)
+- [OpenLDAP (LDAP) and OpenShift (OKD) - Configuring OpenLDAP (LDAP) as identity provider for OpenShift (OKD)](#openldap--ldap--e-openshift--okd----configuring-openldap--ldap--as-identity-provider-for-openshift--okd-)
   * [Avoid "error: x509: certificate signed by unknown authority" (OKD_SERVICES)](#avoid--error--x509--certificate-signed-by-unknown-authority---okd-services-)
     + [List pods used by the access API](#list-pods-used-by-the-access-api)
   * [OpenLDAP (LDAP) as identity provider (OKD_SERVICES)](#openldap--ldap--as-identity-provider--okd-services-)
@@ -1932,7 +1932,7 @@ The NGINX_REVERSE_PROXY must have access to N_INT_LAN ("default") network.
 
 As this is a very common need and setup, we will show you how to allow access to OpenShift (OKD) resources using OpenLDAP (LDAP) as identity provider.
 
-The required procedures are in the "OpenLDAP (LDAP) e OpenShift (OKD) - Configuring OpenLDAP (LDAP) as identity provider for OpenShift (OKD)" section.
+The required procedures are in the "OpenLDAP (LDAP) and OpenShift (OKD) - Configuring OpenLDAP (LDAP) as identity provider for OpenShift (OKD)" section.
 
 # Test the cluster (OKD_SERVICES)
 
@@ -2470,7 +2470,7 @@ ping -c 2 domain.apps.mbr.domain.abc
 
 ---------------------------------------------------------------------
 
-# OpenLDAP (LDAP) e OpenShift (OKD) - Configuring OpenLDAP (LDAP) as identity provider for OpenShift (OKD)
+# OpenLDAP (LDAP) and OpenShift (OKD) - Configuring OpenLDAP (LDAP) as identity provider for OpenShift (OKD)
 
 Here we explain how to configure the OpenLDAP (LDAP) as identity provider to validate user names (UIDs) and passwords against an LDAPv3 server, using simple bind authentication.
 
