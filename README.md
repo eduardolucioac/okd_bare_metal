@@ -90,7 +90,7 @@ The OKD is a distribution of Kubernetes optimized for continuous application dev
   * [Add a job (crontab) to renew the certificate (NGINX_REVERSE_PROXY)](#add-a-job--crontab--to-renew-the-certificate--nginx-reverse-proxy-)
   * [Create configuration to Nginx reverse proxy OpenShift (OKD) (NGINX_REVERSE_PROXY)](#create-configuration-to-nginx-reverse-proxy-openshift--okd---nginx-reverse-proxy-)
     + [Create a configuration file for Nginx reverse proxy](#create-a-configuration-file-for-nginx-reverse-proxy)
-- [OpenLDAP (LDAP) and OpenShift (OKD) - Configuring OpenLDAP (LDAP) as identity provider for OpenShift (OKD)](#openldap--ldap--e-openshift--okd----configuring-openldap--ldap--as-identity-provider-for-openshift--okd-)
+- [OpenLDAP (LDAP) and OpenShift (OKD) - Configuring OpenLDAP (LDAP) as identity provider for OpenShift (OKD)](#openldap--ldap--and-openshift--okd----configuring-openldap--ldap--as-identity-provider-for-openshift--okd-)
   * [Avoid "error: x509: certificate signed by unknown authority" (OKD_SERVICES)](#avoid--error--x509--certificate-signed-by-unknown-authority---okd-services-)
     + [List pods used by the access API](#list-pods-used-by-the-access-api)
   * [OpenLDAP (LDAP) as identity provider (OKD_SERVICES)](#openldap--ldap--as-identity-provider--okd-services-)
