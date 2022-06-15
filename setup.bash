@@ -12,7 +12,7 @@ OKD_DOMAIN="domain.abc"
 OKD_LAN_24="10.3.0"
 OKD_LAN_24_REVERSE="0.3.10"
 
-# Last octet of the OKD_SERVICES server IP and its MAC address.
+# Last octet of the OKD_SERVICES server IP.
 OKD_SERVICES_LST_OCT="3"
 
 # Last octet of the OKD_BOOTSTRAP node IP and its MAC address.
