@@ -6,7 +6,7 @@ The OKD is a distribution of Kubernetes optimized for continuous application dev
 
 [Ref(s).: https://www.okd.io/#v4 ]
 
-**IMPORTANT:** My life, my work and my passion is free software. We've come across people from Red Hat themselves using this roadmap to build infrastructure with Openshift (OKD). Corrections, tweaks and improvements are very welcome (**pull requests** 😉)! Please consider giving us a ⭐, fork, support this project or even visit our professional profile (see [About](#about)). Thanks! 🤗
+**IMPORTANT:** My life, my work and my passion is free software. We've come across people from Red Hat themselves using this roadmap to build infrastructure with Openshift (OKD). Corrections, tweaks and improvements are very welcome (**pull requests** 😉)! Please consider giving us a ⭐, fork, support this project or even visit our professional profile (see [About](#about)). **Thanks!** 🤗
 
 # Table of Contents
 
