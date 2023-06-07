@@ -2,7 +2,7 @@
 
 <img src="openshift-okd.png" height="350">
 
-The OpenShift (OKdD) is a distribution of Kubernetes optimized for continuous application development and multi-tenant deployment. It adds developer and operations-centric tools on top of Kubernetes to enable rapid application development, easy deployment and scaling, and long-term lifecycle maintenance for small and large teams. It incorporates and extends Kubernetes with security and other integrated concepts. The OKD is a sibling Kubernetes distribution to Red Hat OpenShift.
+The OpenShift (OKD) is a distribution of Kubernetes optimized for continuous application development and multi-tenant deployment. It adds developer and operations-centric tools on top of Kubernetes to enable rapid application development, easy deployment and scaling, and long-term lifecycle maintenance for small and large teams. It incorporates and extends Kubernetes with security and other integrated concepts. The OKD is a sibling Kubernetes distribution to Red Hat OpenShift.
 
 The **purpose of this roadmap is to install a Private Cloud on a private server ("bare-metal")**, that is, on an User Provisioned Infrastructure (UPI). This Private Cloud will be all provided by OKD which, basically, is the **open and free community version of OpenShift**. Several additional features like Prometheus, Alertmanager, Grafana and an Alert Manager will be available out of the box. **Cool, isn't it?** 😎
 
