@@ -2,9 +2,16 @@
 
 <img src="openshift-okd.png" height="350">
 
-The OKD is a distribution of Kubernetes optimized for continuous application development and multi-tenant deployment. It adds developer and operations-centric tools on top of Kubernetes to enable rapid application development, easy deployment and scaling, and long-term lifecycle maintenance for small and large teams. It incorporates and extends Kubernetes with security and other integrated concepts. The OKD is a sibling Kubernetes distribution to Red Hat OpenShift. 
+The OpenShift (OKD) is a distribution of Kubernetes optimized for continuous application development and multi-tenant deployment. It adds developer and operations-centric tools on top of Kubernetes to enable rapid application development, easy deployment and scaling, and long-term lifecycle maintenance for small and large teams. It incorporates and extends Kubernetes with security and other integrated concepts. The OKD is a sibling Kubernetes distribution to Red Hat OpenShift.
 
-[Ref(s).: https://www.okd.io/#v4 ]
+The **purpose of this roadmap is to install a Private Cloud on a private server ("bare-metal")**, that is, on a User Provisioned Infrastructure (UPI). This Private Cloud will be all provided by OKD which, basically, is the **open and free community version of OpenShift**. Several additional features like Prometheus, Alertmanager, Grafana and an Alert Manager will be available out of the box. **Cool, isn't it?** 😎
+
+[Ref(s).: https://www.okd.io/#v4 , 
+https://docs.okd.io/4.9/monitoring/accessing-third-party-uis.html , 
+https://thanos.io/tip/components/query.md/ , 
+https://grafana.com/ , 
+https://prometheus.io/ , 
+https://docs.okd.io/latest/monitoring/managing-alerts.html ]
 
 **IMPORTANT:** My life, my work and my passion is free software. We've come across people from Red Hat themselves using this roadmap to build infrastructure with Openshift (OKD). Corrections, tweaks and improvements are very welcome (**pull requests** 😉)! Please consider giving us a ⭐, fork, support this project or even visit our professional profile (see [About](#about)). **Thanks!** 🤗
 
@@ -97,6 +104,8 @@ The OKD is a distribution of Kubernetes optimized for continuous application dev
 - [About](#about)
 
 # IMPORTANT things to know before getting started and some facts about OpenShift (OKD) 4.X
+
+**NOTE:** The narratives described here - while entirely true - may not reflect the current state of OpenShift (OKD). We hope that this is no longer the reality. Okay, Red Hat (IBM)? 😉
 
 This guide is directed to a User-Provisioned Infrastructure (UPI) built on top of KVM, but about KVM we will only cover the most crucial points or those that generate more doubts in the process. However, with some adaptations we can use this guide with any hypervisor or even physical machines (real "bare-metal"). While we can't talk about "bare-metal" for a UPI built on a hypervisor, we'll agree to use this terminology just for the sake of convenience.
 
