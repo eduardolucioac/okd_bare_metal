@@ -1,6 +1,6 @@
 # Install the OpenShift (OKD) 4.X cluster (UPI/"bare-metal")
 
-<img src="openshift-okd.png" height="350">
+<img src="./images/openshift-okd.png" height="350">
 
 The OpenShift (OKD) is a distribution of Kubernetes optimized for continuous application development and multi-tenant deployment. It adds developer and operations-centric tools on top of Kubernetes to enable rapid application development, easy deployment and scaling, and long-term lifecycle maintenance for small and large teams. It incorporates and extends Kubernetes with security and other integrated concepts. The OKD is a sibling Kubernetes distribution to Red Hat OpenShift.
 
@@ -15,12 +15,15 @@ https://docs.okd.io/latest/monitoring/managing-alerts.html ]
 
 **IMPORTANT:** My life, my work and my passion is free software. We've come across people from Red Hat themselves using this roadmap to build infrastructure with Openshift (OKD). Corrections, tweaks and improvements are very welcome (**pull requests** 😉)! Please consider giving us a ⭐, fork, support this project or even visit our professional profile (see [About](#about)). **Thanks!** 🤗
 
-**DONATIONS:** If you like my work and want to support it, then please consider to deposit a donation through **Paypal** by clicking on the next button:
+# Donations
 
-[![DONATION ACCOUNT](https://github.com/ElektroStudios/Easy-Link-File-Viewer/blob/master/Images/Paypal.png)](https://www.paypal.com/donate/?hosted_button_id=TANFQFHXMZDZE)
+Please consider to deposit a donation through PayPal by clicking on the next button...
 
-You are free to specify whatever amount of money you wish. That money will be sent to my **Paypal** account.
-Support this cause and my work! ❤️👨‍👩‍👧🐧
+[![Donation Account](./images/paypal.png)](https://www.paypal.com/donate/?hosted_button_id=TANFQFHXMZDZE)
+
+This is free software and you are equally free to specify any amount of money you want.
+
+**Support free software and my work!** ❤️👨‍👩‍👧🐧
 
 # Table of Contents
 
